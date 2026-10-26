@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="page1">
+    <mxGraphModel dx="772" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start_event" parent="1" style="ellipse;shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="60" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="act_take_order" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Take the customer order" vertex="1">
+          <mxGeometry height="80" width="130" x="150" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="act_run_credit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Run the credit check" vertex="1">
+          <mxGeometry height="80" width="130" x="330" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_credit" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#000000;fontSize=12;verticalAlign=middle;" value="Credit approved?" vertex="1">
+          <mxGeometry height="80" width="80" x="510" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="act_ship_goods" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Ship the goods" vertex="1">
+          <mxGeometry height="70" width="120" x="670" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act_record_order" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Record the order" vertex="1">
+          <mxGeometry height="70" width="120" x="830" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="end_approved" parent="1" style="ellipse;shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=4;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="990" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="act_reject_order" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Reject the order" vertex="1">
+          <mxGeometry height="70" width="120" x="670" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="end_rejected" parent="1" style="ellipse;shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=4;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="830" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_1" edge="1" parent="1" source="start_event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;" target="act_take_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_2" edge="1" parent="1" source="act_take_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;" target="act_run_credit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_3" edge="1" parent="1" source="act_run_credit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;" target="gw_credit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_approved" edge="1" parent="1" source="gw_credit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontSize=11;align=center;verticalAlign=bottom;" target="act_ship_goods" value="approved">
+          <mxGeometry relative="1" x="-0.15" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="550" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_4" edge="1" parent="1" source="act_ship_goods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;" target="act_record_order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_5" edge="1" parent="1" source="act_record_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;" target="end_approved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_rejected" edge="1" parent="1" source="gw_credit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontSize=11;align=center;verticalAlign=top;" target="act_reject_order" value="rejected">
+          <mxGeometry relative="1" x="-0.15" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="550" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_6" edge="1" parent="1" source="act_reject_order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;" target="end_rejected">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
