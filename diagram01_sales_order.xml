@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="DyMrB_DpMdikjeaEWrx7">
+    <mxGraphModel dx="1331" dy="1912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kgUHwQi70rey-sHXhK9g-8" parent="1" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="200" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-10" parent="1" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" value="Record the sale" vertex="1">
+          <mxGeometry height="80" width="120" x="650" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-11" parent="1" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" value="Run the credit check" vertex="1">
+          <mxGeometry height="80" width="120" x="480" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-12" parent="1" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" value="Take the customer order" vertex="1">
+          <mxGeometry height="80" width="120" x="300" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-16" parent="1" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="850" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-17" edge="1" parent="1" source="kgUHwQi70rey-sHXhK9g-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.083;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="kgUHwQi70rey-sHXhK9g-12">
+          <mxGeometry relative="1" x="-0.1758" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-18" edge="1" parent="1" source="kgUHwQi70rey-sHXhK9g-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="kgUHwQi70rey-sHXhK9g-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-19" edge="1" parent="1" source="kgUHwQi70rey-sHXhK9g-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="kgUHwQi70rey-sHXhK9g-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kgUHwQi70rey-sHXhK9g-20" edge="1" parent="1" source="kgUHwQi70rey-sHXhK9g-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="kgUHwQi70rey-sHXhK9g-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
